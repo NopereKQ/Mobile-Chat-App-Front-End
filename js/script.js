@@ -1,9 +1,14 @@
 import { messages } from './data/messagesData.js';
 import { stories } from './data/storiesData.js';
+import { handleSearch } from './data/handleSearch.js';
 
 const storiesCont = document.querySelector('.app__stories-cont');
 const messagesCont = document.querySelector('.app__messages');
+const inputSearch = document.querySelector('.app__top-input')
 
+// inputSearch.addEventListener("keyup", (event) => {
+//     handleSearch()
+// });
 
 stories.forEach((el) => {
 

@@ -145,3 +145,31 @@
     position: absolute;
     right: 0;
 }
+
+/* BOTTOM NAV */
+
+.bottom__nav {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: #1e1e22;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 15px 1px #232227;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottom__nav .bottom__nav-item {
+    cursor: pointer;
+}
+
+.active {
+    color: rgb(112, 60, 255);
+}
+
+span.material-icons-round {
+    font-size: 30px;
+}

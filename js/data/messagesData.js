@@ -1,5 +1,3 @@
-console.log('message loaded')
-
 export const messages = [
     {
         "firstname": "Alex",
