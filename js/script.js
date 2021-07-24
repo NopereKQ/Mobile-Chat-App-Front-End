@@ -1,95 +1,9 @@
-const stories = [
-    {
-        "firstname": "Alex",
-        "lastname": "Best",
-        "avatar": "Alex-Best.jpg",
-        "unread": "Yes"
-    },
-    {
-        "firstname": "Alice",
-        "lastname": "Design",
-        "avatar": "Alice-Design.jpg",
-        "unread": "Yes"
-    },
-    {
-        "firstname": "David",
-        "lastname": "Carter",
-        "avatar": "David-Carter.jpg",
-        "unread": "No"
-    },
-    {
-        "firstname": "Elvis",
-        "lastname": "Marsh",
-        "avatar": "Elvis-Marsh.jpg",
-        "unread": "No"
-    },
-    {
-        "firstname": "Patric",
-        "lastname": "Perkins",
-        "avatar": "Patric-Perkins.jpg",
-        "unread": "No"
-    },
-    {
-        "firstname": "Victor",
-        "lastname": "Donnelly",
-        "avatar": "Victor-Donnelly.jpg",
-        "unread": "No"
-    }
-]
-
-const messages = [
-    {
-        "firstname": "Alex",
-        "lastname": "Best",
-        "avatar": "Alex-Best.jpg",
-        "message": "Lorem ipsum. Lorem Ipsum...",
-        "time": "12:47",
-        "unread": "Yes"
-    },
-    {
-        "firstname": "Alice",
-        "lastname": "Design",
-        "avatar": "Alice-Design.jpg",
-        "message": "Lorem ipsum. Lorem Ipsum...",
-        "time": "12:47",
-        "unread": "Yes"
-    },
-    {
-        "firstname": "David",
-        "lastname": "Carter",
-        "avatar": "David-Carter.jpg",
-        "message": "Lorem ipsum. Lorem Ipsum...",
-        "time": "12:47",
-        "unread": "No"
-    },
-    {
-        "firstname": "Elvis",
-        "lastname": "Marsh",
-        "avatar": "Elvis-Marsh.jpg",
-        "message": "Lorem ipsum. Lorem Ipsum...",
-        "time": "12:47",
-        "unread": "No"
-    },
-    {
-        "firstname": "Patric",
-        "lastname": "Perkins",
-        "avatar": "Patric-Perkins.jpg",
-        "message": "Lorem ipsum. Lorem Ipsum...",
-        "time": "12:47",
-        "unread": "No"
-    },
-    {
-        "firstname": "Victor",
-        "lastname": "Donnelly",
-        "avatar": "Victor-Donnelly.jpg",
-        "message": "Lorem ipsum. Lorem Ipsum...",
-        "time": "12:47",
-        "unread": "No"
-    }
-]
+import { messages } from './data/messagesData.js';
+import { stories } from './data/storiesData.js';
 
 const storiesCont = document.querySelector('.app__stories-cont');
 const messagesCont = document.querySelector('.app__messages');
+
 
 stories.forEach((el) => {
 
