@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    height: 100vh;
+    width: 100vw;
+    background: #232227;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.app {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__top {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.app .app__top-input {
+    background: #323334;
+    color: #b8b8b8;
+    width: 90%;
+    padding-left: 10px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.app__top-input::placeholder {
+    color: #b8b8b8;
+}
+
+.app .app__stories {
+    height: 25vh;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid #323334;
+}
+
+.app__stories h2 {
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.app__stories .app__stories-cont {
+    height: 15vh;
+    width: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.app__stories-story {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-left: 1.1rem;
+    cursor: pointer;
+}
+
+.app__stories-story p {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__stories-cont .app__stories-story-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.unread {
+    border: 2px solid rgb(112, 60, 255);
+}
+
+.app__messages {
+    height: 100%;
+    padding: 0px 5px 5px 20px;
+}
+
+.app__messages-message {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+}
+
+.app__messages-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.app__messages-message-cont {
+    width: 100%;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #323334;
+    position: relative;
+}
+
+.app__messages-message-cont .name {
+    color: #fefcfe;
+    font-size: 14px;
+}
+
+.app__messages-message-cont .message {
+    color: #5d5d5e;
+    font-size: 13px;
+}
+
+.app__messages-message-cont .time {
+    color: #5d5d5e;
+    font-size: 13px;
+}
+
+.message-cont-date {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.message-cont-date .undraw-message {
+    height: 8px;
+    width: 8px;
+    background: #d31c1f;
+    border-radius: 50%;
+    margin-top: .5rem;
+    position: absolute;
+    right: 0;
+}
